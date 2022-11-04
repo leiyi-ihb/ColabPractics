@@ -12,3 +12,6 @@
 2、权重初始化方案有问题  
 神经网络在训练之前，我们需要给其赋予一个初值，但是如何选择这个初始值，则要参考相关文献资料，选择一个最合适的初始化方案`[常用的权重初始化方式](https://cloud.tencent.com/developer/article/1738216)`。合适的初始化方案很重要，用对了，事半功倍，用不对，模型训练状况不忍直视。初始化方案不对，有可能训练半天都训练不动，loss值迟迟居高不下，修改初始化方案，loss值就可能出现断崖式下降。
   `**怎样选择损失函数：**`[如何为神经网络选择损失函数](https://blog.csdn.net/weixin_39653948/article/details/105961968)
+  
+  ### You’ll want to avoid the non-reproducibility problems
+  参考脚本
