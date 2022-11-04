@@ -1,7 +1,7 @@
 **Yi Project**
 ### You’ll want to fix why the loss for this one is so high
 `Why the loss is so high in Keras ??  `
-[深度学习调参技巧](https://tsinghua-gongjing.github.io/posts/DL-tricks.html); [神经网络loss不下降问题](https://blog.ailemon.net/2019/02/26/solution-to-loss-doesnt-drop-in-nn-train/) 
+[深度学习调参技巧](https://tsinghua-gongjing.github.io/posts/DL-tricks.html); [神经网络loss不下降问题](https://blog.ailemon.net/2019/02/26/solution-to-loss-doesnt-drop-in-nn-train/)   
 **损失和损失函数:** 在优化算法中，用于评估候选解（即一组权重）的函数称为目标函数（objective function）。针对不同的问题，可能需要最大化或最小化目标函数，即找出具有最高或最低得分的候选解决方案。通常，使用神经网络将误差最小化。目标函数通常称为成本函数（cost function）或损失函数（loss function），由损失函数计算出的值简称为损失（loss）。`损失函数有重要作用，因为它必须将模型的表现精简为一个标量值，以使该数字的改善作为表征模型变好的标志`。因此，重要的是损失函数应该强有力地表征我们的设计目标。如果选择不合适的误差函数并获得不符合预期的结果，则表示错误地指定了损失函数。
 
 **损失函数在训练过程中不下降的原因有很多，对于其调整可以从如下几个方面进行考虑**
