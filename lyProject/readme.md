@@ -14,4 +14,4 @@
   `**怎样选择损失函数：**`[如何为神经网络选择损失函数](https://blog.csdn.net/weixin_39653948/article/details/105961968)
   
   ### You’ll want to avoid the non-reproducibility problems
-  参考脚本
+  参考脚本：解决keras结果不可重复的问题
