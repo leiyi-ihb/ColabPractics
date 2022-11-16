@@ -7,15 +7,16 @@ data <- read.table('C:/Users/86132/Downloads/outFileBC_1CNN_relu.txt', sep = '\t
 data2 <- read.table('C:/Users/86132/Downloads/outFileBC_2CNN_relu.txt', sep = '\t')
 data3 <- read.table('C:/Users/86132/Downloads/outFileBC_3CNN_tanh.txt', sep = '\t')
 data4 <- read.table('C:/Users/86132/Downloads/outFileBC_3cnn_RELU.txt', sep = '\t')
-x <- seq(from=0, to=49);x #设置横坐标
+x <- seq(from=0, to=49);x #设置横坐标。由于每个纵坐标对应的横坐标个数不一样，因此每一个都要单独设置
+# x <- seq(from=0, to=length(data$v1)-1) # 这也是一种定义方式
 x2 <- seq(from=0, to=37)
 x3 <- seq(from=0, to=76)
 x4 <- seq(from=0, to=72)
 
-tmp <- data[data$V3>0.8,] #提取数据
+tmp <- data[data$V3>0.8,] #提取数据。根据某列元素判断，如果该元素大于0.8，则取出该元素所在行
 
 ggplot()+
-  # geom_line(data = data,aes(x = x ,y = V3,colour = "1CNN_train_acc"),size=1)+ #把点用线连起来
+  # geom_line(data = data,aes(x = x ,y = V3,colour = "1CNN_train_acc"),size=1)+ #把点用线连起来，如果不加，就是点图
   geom_point(data = data,aes(x = x,y=V3,colour = "1CNN_train_acc"),size=3)+
   # geom_line(data = data,aes(x=x,y = V5,colour ="1CNN_test_acc"),size=1) + 
   geom_point(data = data,aes(x=x,y = V5,colour = "1CNN_test_acc"),size=3)+
