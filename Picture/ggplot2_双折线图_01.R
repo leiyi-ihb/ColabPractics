@@ -32,7 +32,7 @@ ggplot()+
   
   scale_colour_manual("",values = c("1CNN_train_acc" = "red","1CNN_test_acc" = "blue", 
                                     "2CNN_train_acc"="green", "2CNN_test_acc"="#999900",
-                                    "3CNN_train_tanh_acc"="aliceblue", "3CNN_test_tanh_acc"="beige",
+                                    "3CNN_train_tanh_acc"="aliceblue", "3CNN_test_tanh_acc"="beige", 
                                     "3CNN_train_relu_acc"="#999966", "3CNN_test_relu_acc"="#CCCCFF"))+
   xlab("parameters")+ylab("acc")+
   theme_bw() + #去掉背景灰色
